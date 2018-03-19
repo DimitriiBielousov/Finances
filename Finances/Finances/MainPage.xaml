@@ -2,10 +2,54 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:Finances"
-             x:Class="Finances.MainPage">
+             x:Class="Finances.MainPage"
+             Title="Menu">
+    <StackLayout BackgroundColor="Gray">
 
-	<Label Text="Welcome to Xamarin.Forms!" 
-           VerticalOptions="Center" 
-           HorizontalOptions="Center" />
+        <Label Text="Menu" 
+                VerticalOptions="Center"
+                HorizontalOptions="Center" />
+    
+        <Button Text="Accounts"
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="StartAndExpand"
+                Clicked="Accounts_Button_Clicked" />
+        
+        <Button Text="Incomes"
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="StartAndExpand"
+                Clicked="Income_Button_Clicked"/>
 
+        <Button Text="Expenses"
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="StartAndExpand"
+                Clicked="Expenses_Button_Clicked" />
+
+        <Button Text="Transfers"
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="StartAndExpand"
+                Clicked="Transfers_Button_Clicked" />
+
+        <Button Text="Debt management"
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="StartAndExpand"
+                Clicked="Debt_management_Button_Clicked" />
+
+        <Button Text="Reports"
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="StartAndExpand"
+                Clicked="Reports_Button_Clicked" />
+
+        <Button Text="Settings"
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="StartAndExpand"
+                Clicked="Settings_Button_Clicked" />
+
+        <Button Text="About"
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="StartAndExpand"
+                Clicked="About_Button_Clicked" />
+        
+    </StackLayout>
+    
 </ContentPage>
