@@ -1,5 +1,7 @@
-﻿using System;
+﻿using Finances.Data;
+using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 
@@ -9,11 +11,24 @@ namespace Finances
 {
 	public partial class App : Application
 	{
+		static SqlLiteDb database;
+
+		public static SqlLiteDb Database
+		{
+			get
+			{
+				if (database == null)
+				{
+					database = new SqlLiteDb();
+				}
+				return database;
+			}
+		}
+
 		public App ()
 		{
 			InitializeComponent();
-
-			MainPage = new Finances.MainPage();
+			MainPage = new NavigationPage(new MainPage());
 		}
 
 		protected override void OnStart ()

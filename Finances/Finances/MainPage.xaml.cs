@@ -16,7 +16,7 @@ namespace Finances
 
         private void Accounts_Button_Clicked(object sender, EventArgs e)
         {
-            NavigationPage.PushAsync(new Accounts());
+            Navigation.PushAsync(new Accounts());
         }
         private void Income_Button_Clicked(object sender, EventArgs e)
         {
